@@ -1,0 +1,346 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Confession Room</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f2f4;
+    color: #292329;
+}
+
+/* HEADER */
+
+header {
+    background: #241827;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(135deg, #3a203d, #71365f);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 22px;
+    margin: 5px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary {
+    background: white;
+    color: #4b2548;
+}
+
+.secondary {
+    border: 1px solid white;
+    color: white;
+}
+
+/* MAIN */
+
+main {
+    max-width: 1050px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stories {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* STORY CARDS */
+
+.card {
+    background: white;
+    padding: 23px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+}
+
+.tag {
+    display: inline-block;
+    background: #eee4ed;
+    color: #63345d;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.card h3 {
+    margin: 12px 0;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.meta {
+    color: #888;
+    font-size: 13px;
+}
+
+/* NOTICE */
+
+.notice {
+    margin-top: 40px;
+    background: white;
+    padding: 23px;
+    border-left: 4px solid #6d345f;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 60px;
+    background: #241827;
+    color: #ddd;
+    text-align: center;
+    padding: 30px;
+    font-size: 13px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        The Confession Room
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Stories</a>
+        <a href="#">Advice</a>
+        <a href="#">Sign In</a>
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h1>Share your story. Be heard.</h1>
+
+    <p>
+        A community where adults can share personal experiences,
+        ask questions and receive advice from people who understand.
+    </p>
+
+    <div class="buttons">
+
+        <a class="button primary" href="#">
+            Share Your Story
+        </a>
+
+        <a class="button secondary" href="#">
+            Browse Stories
+        </a>
+
+    </div>
+
+</section>
+
+
+<main>
+
+    <div class="section-title">
+
+        <h2>
+            Latest Stories
+        </h2>
+
+    </div>
+
+
+    <div class="stories">
+
+
+        <article class="card">
+
+            <span class="tag">
+                Relationships
+            </span>
+
+            <h3>
+                Something I've never told anyone
+            </h3>
+
+            <p>
+                A personal experience that changed the way
+                I look at my relationship.
+            </p>
+
+            <div class="meta">
+                Anonymous · 18 comments
+            </div>
+
+        </article>
+
+
+        <article class="card">
+
+            <span class="tag">
+                Marriage
+            </span>
+
+            <h3>
+                How do I talk to my partner about this?
+            </h3>
+
+            <p>
+                I would appreciate advice from people who
+                have experienced something similar.
+            </p>
+
+            <div class="meta">
+                Anonymous · 27 comments
+            </div>
+
+        </article>
+
+
+        <article class="card">
+
+            <span class="tag">
+                Advice
+            </span>
+
+            <h3>
+                Has anyone else been through this?
+            </h3>
+
+            <p>
+                Looking for honest experiences and different
+                perspectives before making a decision.
+            </p>
+
+            <div class="meta">
+                Anonymous · 11 comments
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+    <div class="notice">
+
+        <strong>18+ Community</strong>
+
+        <br><br>
+
+        The Confession Room is intended for adults.
+        Members should respect other people and protect
+        their privacy.
+
+        <br><br>
+
+        Do not post personal identifying information or
+        material involving anyone who has not consented
+        to its publication.
+
+    </div>
+
+</main>
+
+
+<footer>
+
+    © 2026 The Confession Room
+
+    <br><br>
+
+    Community · Privacy · Rules · Report
+
+</footer>
+
+
+</body>
+</html>
+```
